@@ -16,14 +16,16 @@
             render() {
                 return <div>
                     <h1>{this.props.text}</h1>
-                    <p>this is my first React component!</p>
+                    <p>{this.props.children}</p>
                 </div>
             }
         }
 
         ReactDOM.render(<div>
             <MyComponent text="Hello World"/>
+            this is my first React component!
             <MyComponent text="Hell Word"/>
+            smash mouth!
         </div>, document.getElementById('react-container'))
     </script>
 </body>
