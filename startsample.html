@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+   <script  src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div id='react-container'></div>
+    <script type="text/babel">
+
+
+        class MyComponent extends React.Component {
+            render() {
+                return <div>
+                    <h1>{this.props.text}</h1>
+                    <p>{this.props.children}</p>
+                </div>
+            }
+        }
+
+        ReactDOM.render(<div>
+            <MyComponent text="Hello World"/>
+            this is my first React component!
+            <MyComponent text="Hell Word"/>
+            smash mouth!
+        </div>, document.getElementById('react-container'))
+    </script>
+</body>
+</html>
