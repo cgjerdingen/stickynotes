@@ -21,7 +21,10 @@
             }
         }
 
-        ReactDOM.render(<MyComponent text="Hello World"/>, document.getElementById('react-container'))
+        ReactDOM.render(<div>
+            <MyComponent text="Hello World"/>
+            <MyComponent text="Hell Word"/>
+        </div>, document.getElementById('react-container'))
     </script>
 </body>
 </html>

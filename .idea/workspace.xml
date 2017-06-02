@@ -21,8 +21,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+            <state relative-caret-position="316">
+              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -188,7 +188,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496432712516</updated>
-      <workItem from="1496432714634" duration="4116000" />
+      <workItem from="1496432714634" duration="4172000" />
     </task>
     <task id="LOCAL-00001" summary="ES5 style component">
       <created>1496438834599</created>
@@ -211,11 +211,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496440957890</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Props introduced">
+      <created>1496441029791</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1496441029791</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4116000" />
+    <option name="totallyTimeSpent" value="4172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
@@ -250,7 +257,8 @@
     <MESSAGE value="ES5 style component" />
     <MESSAGE value="First ES6 style component" />
     <MESSAGE value="First ES6 style stateless" />
-    <option name="LAST_COMMIT_MESSAGE" value="First ES6 style stateless" />
+    <MESSAGE value="Props introduced" />
+    <option name="LAST_COMMIT_MESSAGE" value="Props introduced" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -259,8 +267,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        <state relative-caret-position="316">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding />
         </state>
       </provider>
