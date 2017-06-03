@@ -14,22 +14,49 @@
 
 
         class Note extends React.Component {
-            edit() {
+            constructor(props) {
+                super(props)
+                this.state = {editing: false}
 
+                this.edit = this.edit.bind(this)
+                this.save = this.save.bind(this)
+            }
+
+            edit() {
+                this.setState({editing: true})
+            }
+            save() {
+                this.setState({editing: false})
             }
             remove() {
-
+                alert("To do: Removing Note")
             }
-            render() {
+            renderForm() {
                 return (
-                    <div className="note">
-                        <p>{this.props.children}</p>
-                        <span>
+                        <div className="note">
+                            <textarea></textarea>
+                            <button onClick={this.save}>SAVE</button>
+                        </div>
+                )
+            }
+            renderDisplay() {
+                return (
+                        <div className="note">
+                            <p>{this.props.children}</p>
+                            <span>
                             <button onClick={this.edit}>EDIT</button>
                             <button onClick={this.remove}>X</button>
                         </span>
-                    </div>
+                        </div>
                 )
+            }
+            render() {
+                if(this.state.editing){
+                    return this.renderForm()
+                } else {
+                    return this.renderDisplay()
+                }
+
             }
         }
 
