@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/prop-types/prop-types.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Component Lifecycle</title>
+</head>
+<body>
+<div id='react-container'></div>
+<script type="text/babel">
+    class Box extends React.Component {
+        constructor(props) {
+            super(props)
+            this.state = {editing: false}
+
+            //this.edit = this.edit.bind(this)
+
+
+        }
+
+        componentWillMount() {
+            alert('Component about to mount')
+        }
+
+        render() {
+            return (<div id='myDiv' className="note"></div>)
+        }
+
+        componentDidMount() {
+            alert('Component did mount')
+        }
+    }
+
+    ReactDOM.render(
+        <Box />,
+        document.getElementById('react-container')
+    )
+
+    let getRidOfBox = document.getElementById('myDiv')
+    getRidOfBox.onclick = function () {
+        ReactDOM.unmountComponentAtNode(document.getElementById('react-container'))
+        alert('unmounted my component')
+    }
+</script>
+</body>
+</html>
