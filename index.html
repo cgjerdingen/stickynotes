@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/prop-types/prop-types.min.js"></script>
     <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
    <script  src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -26,6 +27,7 @@
                 this.setState({editing: true})
             }
             save() {
+                var val = this.refs.newText.value
                 this.setState({editing: false})
             }
             remove() {
@@ -34,7 +36,7 @@
             renderForm() {
                 return (
                         <div className="note">
-                            <textarea></textarea>
+                            <textarea ref="newText"></textarea>
                             <button onClick={this.save}>SAVE</button>
                         </div>
                 )
@@ -55,9 +57,48 @@
             }
         }
 
-        ReactDOM.render(<div>
-            <Note>HelloWorld</Note>
-        </div>, document.getElementById('react-container'))
+        class Board extends React.Component {
+            constructor(props) {
+                super(props)
+                this.state = {
+                    notes: [
+                        'Call Bob',
+                        'Finish app',
+                        'Write tests'
+                    ]
+                }
+            }
+            render() {
+                return (
+                    <div className="board">
+                        {this.state.notes.length}
+                        {this.state.notes.map( (note, i) => {
+                            return (<Note key={i}>{note}</Note>)
+                        })}
+                    </div>
+                )
+            }
+        }
+        Board.propTypes = {
+            count: PropTypes.number,
+            count: reasonableNumberOfNotes
+        }
+
+        ReactDOM.render(
+                <Board/>,
+            document.getElementById('react-container'))
+
+        function reasonableNumberOfNotes(props, propName, componentName) {
+            if (props[propName]) {
+                let value = props[propName];
+                if (typeof value === 'number') {
+                    return value > 100 ? new Error(propName + ' in ' + componentName + " count is greater than 100, we can't render that many notes."): null;
+                }
+            }
+
+            // assume all ok
+            return null;
+        }
     </script>
 </body>
 </html>
