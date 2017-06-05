@@ -22,8 +22,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="50" column="26" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -245,7 +245,7 @@
       <updated>1496432712516</updated>
       <workItem from="1496432714634" duration="7603000" />
       <workItem from="1496507852832" duration="7392000" />
-      <workItem from="1496581506760" duration="14034000" />
+      <workItem from="1496581506760" duration="16469000" />
     </task>
     <task id="LOCAL-00001" summary="ES5 style component">
       <created>1496438834599</created>
@@ -352,11 +352,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496616646144</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add a service call to create starter notes from an API">
+      <created>1496617584866</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1496617584866</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29029000" />
+    <option name="totallyTimeSpent" value="31464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
@@ -402,7 +409,8 @@
     <MESSAGE value="Create the add new Note button on the board" />
     <MESSAGE value="Lifecycle sample for react lifecycle events." />
     <MESSAGE value="move data between elements in renderForm and edit form." />
-    <option name="LAST_COMMIT_MESSAGE" value="move data between elements in renderForm and edit form." />
+    <MESSAGE value="Add a service call to create starter notes from an API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a service call to create starter notes from an API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -456,8 +464,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="50" column="26" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
           <folding />
         </state>
       </provider>
