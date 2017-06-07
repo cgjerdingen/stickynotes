@@ -14,12 +14,20 @@
 <script type="text/babel">
     class Box extends React.Component {
         constructor(props) {
+
             super(props)
-            this.state = {editing: false}
 
-            //this.edit = this.edit.bind(this)
+            this.state = {
+                backgroundColor: 'blue',
+                height: 200,
+                width: 200
+            }
 
+        }
 
+        componentWillReceiveProps(props) {
+            props.value = props.value || '';
+            // Do something with props...
         }
 
         componentWillMount() {
@@ -27,7 +35,11 @@
         }
 
         render() {
-            return (<div id='myDiv' className="note"></div>)
+            return (
+                <div id='myDiv' max="10"  >
+                    <div style={this.state}></div>
+                </div>
+            )
         }
 
         componentDidMount() {
@@ -45,6 +57,9 @@
         ReactDOM.unmountComponentAtNode(document.getElementById('react-container'))
         alert('unmounted my component')
     }
+
+
+
 </script>
 </body>
 </html>
